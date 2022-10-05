@@ -1,18 +1,45 @@
 {
-  "extends": ["next/core-web-vitals"],
+  "extends": ["next/core-web-vitals", "plugin:prettier/recommended"],
   "settings": {
     "import/resolver": {
       "alias": {
-        "map": ["src"],
+        "map": ["./src"],
         "extensions": [".js", ".jsx", ".json"]
       }
     }
   },
+  "plugins": ["unused-imports"],
   "overrides": [
     {
       "files": "",
       "rules": {}
     }
   ],
-  "rules": {}
+  "rules": {
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "assert": "either"
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "newlines-between": "always",
+        "groups": ["builtin", "external", "parent", "sibling", "index"],
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "external",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["builtin"]
+      }
+    ]
+  }
 }

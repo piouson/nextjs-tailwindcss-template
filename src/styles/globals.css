@@ -24,6 +24,13 @@ a {
   box-sizing: border-box;
 }
 
+:focus:not(:focus-visible) {
+  outline: none;
+}
+:focus-visible {
+  outline-color: indigo;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
