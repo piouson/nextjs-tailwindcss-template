@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --ignore-path .gitignore --write .",
+    "format": "prettier --ignore-path .gitignore --ignore-unknown --write .",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -27,8 +27,8 @@
   "lint-staged": {
     "src/**/*.{js,jsx}": [
       "eslint --max-warnings=0 --fix",
-      "prettier --write"
+      "prettier --ignore-unknown --write"
     ],
-    "*": "prettier --write --ignore-unknown"
+    "*": "prettier --ignore-unknown --write"
   }
 }
