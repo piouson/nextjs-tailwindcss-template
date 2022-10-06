@@ -11,6 +11,9 @@ module.exports = {
       colors: {
         primary: 'indigo',
       },
+      fontFamily: {
+        sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
+      },
     },
     screens: {
       xs: '480px',
