@@ -3,16 +3,11 @@
 @tailwind utilities;
 
 html,
-body {
+body,
+#__next {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-#__next {
-  height: 100%;
 }
 
 a {
@@ -28,7 +23,7 @@ a {
   outline: none;
 }
 :focus-visible {
-  outline-color: indigo;
+  outline-color: indigo; // set primary color
 }
 
 @media (prefers-color-scheme: dark) {

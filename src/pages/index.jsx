@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import { Logo } from 'src/svgs'
 
 export default function Home() {
   return (
@@ -30,7 +30,7 @@ export default function Home() {
         >
           Powered by{' '}
           <span className="ml-2 h-4 dark:invert">
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            <Logo aria-label="Vercel" className="w-4" />
           </span>
         </a>
       </footer>
