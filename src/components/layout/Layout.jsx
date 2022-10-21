@@ -1,5 +1,5 @@
 const Layout = ({ children }) => (
-  <div className="flex flex-col h-full">{children}</div>
+  <div className="flex h-full flex-col">{children}</div>
 )
 
 export default Layout

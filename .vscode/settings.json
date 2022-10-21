@@ -2,10 +2,5 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[svg]": {
-    "editor.defaultFormatter": "jock.svg"
-  },
-  "editor.formatOnSave": true,
   "eslint.validate": ["javascript", "javascriptreact"]
 }

@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
-    <Html>
+    <Html lang="en">
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -15,7 +15,7 @@ export default function Document() {
           rel="stylesheet"
         />
       </Head>
-      <body>
+      <body className="bg-white dark:bg-gray-900">
         <Main />
         <NextScript />
       </body>

@@ -1,5 +1,10 @@
+const envConfig = require('./env.json')
+
+const environment = process.env.TARGET_ENV || process.env.NODE_ENV
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  env: envConfig[environment],
   reactStrictMode: true,
   swcMinify: true,
   webpack(config) {

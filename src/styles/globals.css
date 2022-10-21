@@ -23,7 +23,7 @@ a {
   outline: none;
 }
 :focus-visible {
-  outline-color: indigo; // set primary color
+  outline-color: indigo; /* set primary color */
 }
 
 @media (prefers-color-scheme: dark) {
