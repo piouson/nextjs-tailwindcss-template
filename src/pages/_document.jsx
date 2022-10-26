@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import { ProvideFeedback } from 'src/components'
 
 export default function Document() {
   return (
@@ -16,6 +17,7 @@ export default function Document() {
         />
       </Head>
       <body className="bg-white dark:bg-gray-900">
+        <ProvideFeedback />
         <Main />
         <NextScript />
       </body>

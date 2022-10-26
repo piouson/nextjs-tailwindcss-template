@@ -1,3 +1,2 @@
-import { FC } from 'react'
-
-export const Layout: FC
+export { default as Layout } from './layout/Layout'
+export { default as ProvideFeedback } from './provideFeedback/ProvideFeedback'
