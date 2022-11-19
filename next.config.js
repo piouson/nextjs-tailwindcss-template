@@ -1,8 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: getEnvConfig(),
+  /** `exportPathMap` is exclusive to `next export`, see https://nextjs.org/docs/api-reference/next.config.js/exportPathMap */
+  exportPathMap: async function () {
+    return {
+      '/': { page: '/' },
+    }
+  },
   reactStrictMode: true,
   swcMinify: true,
+  trailingSlash: true,
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/i,
